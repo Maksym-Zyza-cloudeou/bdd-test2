@@ -1,0 +1,12 @@
+{
+  "featuresPath": "./bdd/features",
+  "stepsPath": "./bdd/steps",
+  "contextsPath": "./bdd/contexts",
+  "threadsNumber": 10,
+  "reporters": ["default"],
+  "recordCases": false,
+  "webapp": {
+    "host": "",
+    "port": 0
+  }
+}
