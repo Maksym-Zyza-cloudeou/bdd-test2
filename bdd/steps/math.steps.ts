@@ -1,5 +1,5 @@
 import { Identificators } from "../contexts/Identificators";
-const { featureContext } = require("@telus-bdd/telus-bdd");
+import { featureContext } from "@cloudeou/telus-bdd";
 
 export const mathSteps = async ({ given, and, when, then }) => {
   let mathContext = () =>
@@ -23,6 +23,6 @@ export const mathSteps = async ({ given, and, when, then }) => {
 
   then(/^result is: (.*)$/, (expectedResult) => {
     console.log("resulting");
-    // expect(mathContext().getNumRes()).toBe(Number(expectedResult));
+    mathContext().getNumRes().toBe(Number(expectedResult));
   });
 };

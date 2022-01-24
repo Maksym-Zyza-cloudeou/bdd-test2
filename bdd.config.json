@@ -1,7 +1,7 @@
 {
   "featuresPath": "./bdd/features",
-  "stepsPath": "./bdd/steps",
-  "contextsPath": "./bdd/contexts",
+  "stepsPath": "./dist/steps",
+  "contextsPath": "./dist/contexts",
   "threadsNumber": 10,
   "reporters": ["default"],
   "recordCases": false,
