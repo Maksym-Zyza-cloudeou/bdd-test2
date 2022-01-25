@@ -18,7 +18,7 @@ export const mathSteps = async ({ given, and, when, then }) => {
   when("multiply numbers", async () => {
     const mlt = mathContext().getFirstNum() * mathContext().getSecondNum();
     mathContext().setNumRes(mlt);
-    console.log("multiplying numbers>>", mlt);
+    console.log("multiplying result>>", mlt);
   });
 
   then(/^result is: (.*)$/, (expectedResult) => {
